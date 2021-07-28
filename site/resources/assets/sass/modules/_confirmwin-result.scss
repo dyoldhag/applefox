@@ -1,0 +1,211 @@
+.confirmwinresult{
+  @media (max-width: 767px) {
+    .background{
+      background: url('../images/bg-board-result.jpg') no-repeat top;
+      background-size: 100% auto;
+    }
+  }
+  .board{
+    .board-result-prize-id{
+      font-family: 'Veneer';
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 17px;
+      margin-top: 6.5vw;
+      margin-bottom: 3vw;
+      @media (max-width: 1366px) {
+        margin-bottom: 2vw;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 1vw;
+      }
+      @media (max-width: 414px) {
+        margin-top: 13vw;
+        margin-bottom: 6vw;
+      }
+      @media (max-width: 375px) {
+        margin-top: 12vw;
+      }
+      @media (max-width: 320px) {
+        margin-top: 10vw;
+      }
+    }
+    .board-result-prize-img{
+      margin-bottom: 3vw;
+      min-height: 11vw;
+      position: relative;
+      @media (max-width: 1440px) {
+        margin-bottom: 1vw;
+        min-height: 12vw;
+      }
+      @media (max-width: 1152px) {
+        min-height: 11vw;
+      }
+      @media (max-width: 1024px) {
+        height: 10vw;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 1vw;
+        position: relative;
+      }
+      @media (max-width: 414px) {
+        height: 27vw;
+        margin-bottom: 3vw;
+      }
+      @media (max-width: 375px) {
+        height: 28vw;
+        margin-bottom: 2vw;
+      }
+      img{
+        max-height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        @media (max-width: 768px) {
+          max-width: 50vw;
+        }
+      }
+    }
+    .board-result-prize-description{
+      font-family: 'Veneer';
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 35px;
+      margin-bottom: 1vw;
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 20px;
+        margin-bottom: 0;
+      }
+      @media (max-width: 414px) {
+        font-size: 7vw;
+        line-height: 7vw;
+      }
+    }
+    .board-result-prize-content{
+      font-family: 'Avenir Next';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 1vw;
+      @media (max-width: 768px) {
+        line-height: 17px;
+        font-size: 14px;
+      }
+      @media (max-width: 414px) {
+        margin-bottom: 3vw;
+      }
+      @media (max-width: 320px) {
+        line-height: 15px;
+        font-size: 12px;
+      }
+    }
+    .btn{
+      max-width: 150px;
+      font-size: 20px;
+      height: 45px;
+      line-height: 45px;
+      @media (max-width: 375px) {
+        max-width: 130px;
+      }
+      @media (max-width: 320px) {
+        max-width: 100px;
+        font-size: 15px;
+        height: 35px;
+        line-height: 35px;
+      }
+    }
+    .note{
+      font-family: 'Avenir Next';
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      margin-top: 1vw;
+      @media (max-width: 767px) {
+        white-space: pre-line;
+        line-height: 20px;
+        margin-top: 2vw;
+      }
+    }
+  }
+  .confirmwin-result{
+    margin-top: -8vw;
+    @media (max-width: 1600px) {
+      margin-top: -7vw;
+    }
+    @media (max-width: 1400px) {
+      margin-top: -5.5vw;
+    }
+    @media (max-width: 1366px) {
+      margin-top: -6vw;
+    }
+    @media (max-width: 1280px) {
+      margin-top: -8vw;
+    }
+    @media (max-width: 1152px) {
+      margin-top: -1vw;
+    }
+    @media (max-width: 1024px) {
+      margin-top: -4.3vw;
+    }
+    @media (max-width: 768px) {
+      margin-top: -4.7vw;
+    }
+    .confirmwin-result-footer{
+      position: relative;
+      max-width: 49vw;
+      height: 70px;
+      margin: auto;
+      @media (max-width: 1280px) {
+        height: 80px;
+      }
+      @media (max-width: 1024px) {
+        height: 50px;
+      }
+      @media (max-width: 767px) {
+        max-width: 100%;
+      }
+      @media (max-width: 414px) {
+        height: 37vw;
+      }
+      @media (max-width: 320px) {
+        height: 40vw;
+      }
+      img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media (max-width: 1024px) {
+          max-width: 23vw;
+        }
+        @media (max-width: 767px) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+.confirmwin .content.confirmwin-result::before{
+  border-bottom: 130px solid #FFF8E6;
+  top: -130px;
+  @media (max-width: 1024px) {
+    border-bottom: 100px solid #FFF8E6;
+    top: -100px;
+  }
+  @media (max-width: 768px) {
+    border-bottom: 50px solid #FFF8E6;
+    top: -50px;
+  }
+}
+
+body.confirmwinresult.MacOS .board , body.confirmwinresult.Linux .board{
+  .btn{
+    line-height: 50px;
+    @media (max-width: 768px) {
+      line-height: 39px;    
+    }
+  }
+}

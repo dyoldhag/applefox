@@ -1,0 +1,70 @@
+.login-page, .register-page{
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.login-box, .register-box{
+  margin: 0 auto;
+  padding: 10% 0;
+}
+
+.table-img{
+  max-width: 50px;max-height:34px;
+}
+
+.navbar-nav>li>.dropdown-menu{
+  margin: 0;
+  padding: 0;
+}
+.dropdown-menu>li>a{
+  padding: 8px 20px;
+}
+
+input.error , textarea.error{
+  border: 1px solid red;
+}
+label.error{
+  font-weight: normal;
+  color: red;
+  position: absolute;
+  bottom: -24px;
+  left: 15px;
+}
+
+@media only screen and (max-width: 767px)  {
+  .toolbar{
+    margin-bottom: 6px;
+  }
+  .navbar-collapse.pull-left{
+    position: absolute;
+    background: #00a65a;
+    top: 50px;
+    width: 100%;
+  }
+  .navbar-form{
+    margin: 0;
+    padding: 10px 0;
+  }
+  .navbar-nav{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.project-image{
+  width: 150px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.project-image img{
+  max-width: 100%;
+}
+.project-image strong{
+  color: #666;
+  padding: 5px;
+  background: #f4f4f4;
+  display: block;
+  border: 1px solid #eee;
+}

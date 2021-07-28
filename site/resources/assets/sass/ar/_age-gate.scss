@@ -1,0 +1,138 @@
+.agegate{
+  .ar-background{
+    color: black;
+    background: url('../images/ar/agegate-m.png') no-repeat top 280px center;
+    background-size: 100%;
+    min-height: 100vh;
+  }
+  .content{
+    width: calc(100% - 30px);
+    max-width: 652px;
+    padding-bottom: 10px;
+    padding-top: 55px;
+  }
+  #agegate{
+    min-height: auto;
+  }
+  #agegatefrm{
+    min-height: 120vw;
+  }
+  h1{
+    font-family: 'Veneer';
+    font-size: 40px;
+    margin-bottom: 5px;
+    @media (max-width: 676px) {
+      font-size: 26px;
+    }
+  }
+  input[type=text] {
+    border: 0;
+    text-align: center;
+    line-height: 47px;
+    background: transparent;
+    border-bottom: 4px solid black;
+    font-family: Veneer, sans-serif;
+    font-size: 90px;
+    margin: 0 12px;
+    padding: 0;
+    outline: none;
+    width: 190px;
+    color: black;
+    border-radius: 0;
+    @media (max-width: 676px) {
+      width: 85px;
+      font-size: 50px;
+      margin: 0 3px;
+    }
+    &::placeholder {
+      color: black;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: black;
+    }
+    &::-ms-input-placeholder { 
+      color: black;
+    }
+  }
+  button{
+    margin-bottom: 8px;
+    max-width: 85%;
+  }
+  .by-click{
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 8px;
+    white-space: pre-line;
+    opacity: 0.7;
+    a{
+      color: black;
+      text-decoration: underline;
+    }
+    @media (max-width: 320px) {
+      font-size: 9px;
+    }
+  }
+  .errors {
+    font-size: 0.75em;
+    color: #FF3333;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    font-family: 'Avenir Next';
+    font-size: 14px;
+    margin: 10px 0 5px;
+    @media (max-width: 320px) {
+      font-size: 13px;
+    }
+  }
+  .show-error-text{
+    opacity: 1;
+  }
+  .show-error-input{
+    input[type=text] {
+      &::placeholder {
+        color: #FF3333;
+      }
+      &:-ms-input-placeholder {
+        color: #FF3333;
+      }
+      &::-ms-input-placeholder { 
+        color: #FF3333;
+      }
+    }
+  }
+  .note{
+    font-family: 'Avenir Next Demi';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+    @media (max-width: 1024px) {
+      white-space: pre-line;
+    }
+    @media (max-width: 320px) {
+      font-size: 15px;
+    }
+  }
+}
+.agegate.iOS{
+  input[type=text] {
+    height: 55px;
+    line-height: 55px;
+  }
+}
+
+.agegate.Android{
+  input[type=text] {
+    height: 50px;
+    padding-top: 5px;
+  }
+}
+
+.agegate.MacOS, .agegate.Linux{
+  input[type=text] {
+    height: 100px;
+    line-height: 110px;
+  }
+}

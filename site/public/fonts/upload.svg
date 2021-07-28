@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="50" viewBox="0 0 180 50">
+  <g id="submit_bbutton" data-name="submit bbutton" transform="translate(-129.797 -509.065)">
+    <g id="Rectangle_1743" data-name="Rectangle 1743" transform="translate(129.797 509.065)" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="180" height="50" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="179" height="49" rx="9.5" fill="none"/>
+    </g>
+    <text id="Choose_file" data-name="Choose file" transform="translate(218.008 542.978)" font-size="20" font-family="Veneer"><tspan x="-41.22" y="0">Choose file</tspan></text>
+  </g>
+</svg>

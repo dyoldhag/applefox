@@ -1,0 +1,181 @@
+[
+    {
+        "state":"JOHOR",
+        "area":[
+            "BAKAWALI",
+            "BATU PAHAT",
+            "DESA TEBRAU",
+            "IMPIAN EMAS",
+            "JOHOR BAHRU",
+            "JOHOR JAYA",
+            "KLUANG",
+            "KULAI",
+            "MOLEK",
+            "MOUNT AUSTIN",
+            "PERMAS JAYA",
+            "SKUDAI",
+            "TAMAN BUKIT INDAH",
+            "TAMAN GAYA "
+        ]
+    },
+    {
+        "state":"KEDAH",
+        "area":[
+            "ALOR SETAR",
+            "SUNGAI PETANI"
+        ]
+    },
+    {
+        "state":"KELANTAN",
+        "area":[
+            "KOTA BHARU"
+        ]
+    },
+    {
+        "state":"KUALA LUMPUR",
+        "area":[
+            "BANGSAR",
+            "BANGSAR BARU",
+            "CHANGKAT",
+            "CHERAS",
+            "KEPONG",
+            "KUCHAI",
+            "MID VALLEY CITY",
+            "PANDAN INDAH",
+            "PUBLIKA",
+            "SCOTT GARDEN",
+            "TAMAN DESA",
+            "TAMAN KEPONG",
+            "TREC",
+            "TTDI"
+        ]
+    },
+    {
+        "state":"MELAKA",
+        "area":[
+            "LEBUH AYER KEROH",
+            "MELAKA",
+            "TAMAN 1-LEGENDA"
+        ]
+    },
+    {
+        "state":"NEGERI SEMBILAN",
+        "area":[
+            "SEREMBAN",
+            "PORT DICKSON",
+            "BAHAU"
+        ]
+    },
+    {
+        "state":"PAHANG",
+        "area":[
+            "BENTONG",
+            "CHERATING",
+            "KUANTAN",
+            "MENTAKAB"
+        ]
+    },
+    {
+        "state":"PERAK",
+        "area":[
+            "GREEN TOWN",
+            "IPOH",
+            "IPOH GARDEN",
+            "IPOH GARDEN EAST",
+            "IPOH TOWN",
+            "KAMPAR",
+            "LANGKAP",
+            "LUMUT",
+            "PANTAI REMIS",
+            "SERI MANJUNG",
+            "SITIAWAN",
+            "TAIPING",
+            "TELUK INTAN",
+            "TOWN"
+        ]
+    },
+    {
+        "state":"PERLIS",
+        "area":[
+            "ARAU"
+        ]
+    },
+    {
+        "state":"PULAU PINANG",
+        "area":[
+            "AUTO CITY",
+            "AYER ITAM",
+            "BAYAN LEPAS",
+            "BUKIT MERTAJAM",
+            "BUKIT MERTAJAM ",
+            "GEORGETOWN",
+            "ICON CITY",
+            "ICON CITY ",
+            "JELUTONG",
+            "JURU-AUTO CITY",
+            "PULAU TIKUS",
+            "QUEENSBAY",
+            "SEBERANG JAYA",
+            "SIMPANG AMPAT",
+            "TANJUNG BUNGAH",
+            "TANJUNG TOKONG"
+        ]
+    },
+    {
+        "state":"SABAH",
+        "area":[
+            "BORNION",
+            "DAMAI",
+            "IMAGO",
+            "KOTA KINABALU",
+            "LINTAS",
+            "LINTAS JAYA",
+            "METRO TOWN",
+            "PADIMAS POINT",
+            "PLAZA 333",
+            "WATERFRONT"
+        ]
+    },
+    {
+        "state":"SARAWAK",
+        "area":[
+            "BINTULU",
+            "KUCHING",
+            "MIRI",
+            "SIBU"
+        ]
+    },
+    {
+        "state":"SELANGOR",
+        "area":[
+            "AMPANG",
+            "BAHAU",
+            "BANTING",
+            "BATU 9 CHERAS",
+            "BATU CAVES",
+            "C180",
+            "JENJAROM",
+            "KAJANG",
+            "KELANA JAYA",
+            "KEPONG",
+            "KLANG",
+            "KUALA PILAH",
+            "MAHKOTA CHERAS",
+            "PETALING JAYA",
+            "PUCHONG",
+            "RAWANG",
+            "SEAPARK PJ",
+            "SEKINCHAN",
+            "SRI PETALING",
+            "SUNWAY",
+            "TMN LEMBAH MAJU"
+        ]
+    },
+    {
+        "state":"TERENGGANU",
+        "area":[
+            "KEMAMAN",
+            "KUALA TERENGGANU"
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+.home{
+  .ar-background{
+    color: black;
+    background: url('../images/ar/home-m.png') no-repeat top 85px center;
+    background-size: 100%;
+    min-height: 100vh;
+  }
+  .content{
+    font-family: 'Avenir Next';
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFF8E6;
+    margin: 72vw 20px 0;
+    .preview{
+      font-family: 'Avenir Next Demi';
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .note{
+      font-size: 10px;
+      line-height: 20px;
+      padding: 10px 0 15px;
+    }
+    .transparent{
+      margin-bottom: 25vw;
+      @media (max-width: 375px) {
+        margin-bottom: 16vw;
+      }
+      @media (max-width: 320px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

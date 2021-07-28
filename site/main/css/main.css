@@ -1,0 +1,368 @@
+html{
+	-webkit-font-smoothing: antialiased;
+	max-width: 100%;
+	overflow-x: hidden;
+
+}
+    
+    
+
+body{
+	font-size: 3em;
+	letter-spacing: 0.1em;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000;
+	background: #f7f5e3;
+	max-width: 100%;
+	overflow-x: hidden;	
+}
+
+.listformat
+{
+	font-weight: bold;
+	font-size:0.8em;
+	letter-spacing:0.05em;
+	list-style:none;
+}
+
+.listformat li {
+	padding-left: 1.3em;
+}
+
+.listformat li:before {
+	content: "c"; /* FontAwesome Unicode */
+	font-family: 'Wingdings 3';
+	display: inline-block;
+	margin-left: -1.3em; /* same as padding-left set on li */
+	width: 1.3em; /* same as padding-left set on li */
+	font-size: 14px;
+}
+
+.menufooter
+{
+	font-size:1em;
+	color:#fff !important;
+}
+
+.applecider {
+	padding-bottom:100px;
+}
+
+a:link {
+    color: #f7f5e3;
+    /*text-decoration: underline;*/
+}
+
+a:visited {
+    color: #f7f5e3;
+    /*text-decoration: underline;*/
+}
+
+@font-face {
+  font-family: 'Veneer';
+  src: url('../fonts/Veneer.eot?#iefix') format('embedded-opentype'),  url('../fonts/Veneer.woff') format('woff'), url('../fonts/Veneer.ttf')  format('truetype'), url('../fonts/Veneer.svg#Veneer') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+#wrapper{
+	position: relative;	
+	height:1100px;
+	overflow-y:hidden;
+}
+
+#wrapper-age{
+	position: relative;	
+	height:1100px;
+	overflow-y:hidden;
+}
+
+.mainbanner{
+	position: relative;
+}
+
+.mainbanner .background{
+	width: 100%;
+}
+
+.mainbottle-wrapper{
+	position: absolute;
+    width: 100%;    
+    top: 30px;
+}
+
+.mainbottle{
+	position: relative;
+    width: 40%;
+	margin: 0 auto;
+}
+
+.apple_tree{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.linktnc
+{
+	 color: #000 !important;
+	 font-size:16px;
+}
+
+.apple_grass{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.tnctitle{
+	font-family: Veneer, sans-serif;
+	font-size:20px;
+}
+
+.tnctitlesmall{
+	font-family: Veneer, sans-serif;
+	font-size:16px;
+}
+
+.tnctitletext{
+	padding-top:10px;
+	font-size:15px;
+	text-align:justify;
+}
+
+.titletext{
+	font-family: Veneer, sans-serif;
+	font-size:3em;	
+}
+
+.contentWrapper{
+	width: 100%;
+    display: table;
+	padding: 20px 0 0 20px;
+}
+
+.contentCell{
+	display: table-cell;
+    vertical-align: middle;
+	position: relative;
+}
+
+.mb15{
+	margin-bottom: 15px;
+}
+
+.visible-mobile,.visible-mobile-2{
+	display: none;
+}
+
+.whatthefoxstyle {
+	font-family: Veneer, sans-serif;
+	position:absolute;
+	top:79%;
+	left:30%;
+	max-width:300px;
+	white-space: nowrap;
+}
+
+.apple_grass_footer {
+	font-family: Veneer, sans-serif;
+	font-size:1em;
+	position: absolute;
+	bottom: 5%;
+	left:5%;
+}
+
+.veneerfont {
+	font-family: Veneer, sans-serif;
+}
+
+.menulinkfont {
+	font-family: Veneer, sans-serif;
+	font-size:3em;
+	padding-top:20px !important;
+	    line-height: inherit;
+}
+
+.mm-listview>li>a, .mm-listview>li>span {
+    line-height: inherit;
+    padding: 15px 10px 10px 20px!important;
+}
+
+.howitsmadetitle {
+	font-family: Veneer, sans-serif;
+	font-size:3em;
+}
+
+.foxmask{
+	padding-top:30%;
+}
+
+/* Age Gate */
+#agegate input[type=checkbox] {
+  transform: initial;
+  padding: 10px;
+  margin-top: 0;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.confirmcheck{
+	font-size: 16px;
+}
+.agecheck {
+	margin: 0px auto 20px;
+}
+.agecheck input {
+	border: 0;
+	text-align: center;
+	font-size: 70px;
+	line-height: 1;
+	background: transparent;
+	border-bottom: 4px solid black;
+	font-family: Veneer, sans-serif;
+	margin: 0 5px;
+	outline: none;
+}
+.agecheck input::placeholder {
+	color: #868686;
+}
+.agecheck #age-dd,
+.agecheck #age-mm  {
+	width: 110px;
+}
+.agecheck #age-yy {
+	width: 170px;
+}
+.errors {
+	font-size: 0.75em;
+	color: #fff;
+	background: #f00;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 10px;
+	margin: 10px auto;
+	display: none;
+}
+
+.disclaimer{
+	position: absolute;
+    bottom: 10px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 400px){
+	body{
+		font-size: 1em;
+		letter-spacing: 0.1em;
+	}
+
+	#wrapper{
+		position: relative;	
+		height:500px;
+	}
+	
+	
+	#wrapper-age{
+		position: relative;	
+		height:100%;
+	}
+	
+	.foxmask{
+		padding-top:30%;
+	}
+
+	.whatthefoxstyle {		
+		top:73%;
+		left:35%;		
+	}
+
+	.agecheck input {
+		font-size: 22px;
+	}
+	.agecheck #age-dd,
+	.agecheck #age-mm  {
+		width: 50px;
+	}
+	.agecheck #age-yy {
+		width: 80px;
+	}
+	#agegate input[type=checkbox] {
+	  transform: initial;
+	}
+	#appleTree, #appleGrass{
+		opacity: 0.6;
+	}
+}
+
+@media (min-width: 401px) and (max-width: 600px){
+	body{
+		font-size: 1.5em;
+		letter-spacing: 0.1em;
+	}
+	
+	#wrapper-age,#wrapper{
+		position: relative;	
+		height:700px;
+	}
+	#agegate input[type=checkbox] {
+	  transform: initial;
+	}
+
+	.agecheck {
+		margin: 0 auto 20px;
+	}
+	.agecheck input {
+		font-size: 22px;
+	}
+	.agecheck #age-dd,
+	.agecheck #age-mm  {
+		width: 80px;
+	}
+	.agecheck #age-yy {
+		width: 120px;
+	}
+	#appleTree, #appleGrass{
+		opacity: 0.6;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 767px){
+
+	body{
+		font-size: 2em;
+		letter-spacing: 0.1em;
+	}
+
+	#wrapper-age,#wrapper{
+		position: relative;	
+		height:900px;
+	}
+
+}
+
+@media (min-width: 767px) and (max-width: 900px){
+
+	body{
+		font-size: 2em;
+		letter-spacing: 0.1em;
+	}
+
+	#wrapper-age,#wrapper{
+		position: relative;	
+		height:900px;
+	}
+
+	.foxmask{
+		padding-top:40%;
+	}
+	.mainbottle-wrapper {
+		position: absolute;
+		width: 100%;
+		top: 110px;
+	}
+
+}

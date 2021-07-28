@@ -1,0 +1,206 @@
+.header{
+  font-family: 'Veneer';
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: url('../images/gradient.png') center bottom;
+  @media (max-width: 767px){
+    background: url('../images/gradient-m.png') center top;
+    height: 80px;
+  }
+  .bar,
+  .bar:after,
+  .bar:before {
+    width: 34px;
+    height: 2px;
+    @media (max-width: 767px){
+      width: 26px;
+    }
+  }
+  .bar {
+    position: relative;
+    // transform: translateY(25px);
+    // background: rgba(255, 255, 255, 1);
+    // transition: all 0ms 300ms;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    top: 28px;
+    right: 60px;
+    z-index: 9999;
+    background: url('../images/menu.png') no-repeat center;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    @media (max-width: 767px){
+      background: url('../images/menu.png') no-repeat center 0;
+      top: 28px;
+      right: 35px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .bar.animate {
+    background: rgba(255, 255, 255, 0); 
+  }
+
+  .bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    background: #FFF8E6;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  .bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    background: #FFF8E6;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  .bar.animate:after {
+    top: 16px;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    background: rgb(0, 0, 0);
+    @media (max-width: 767px){
+      top: 12px;
+    }
+  }
+
+  .bar.animate:before {
+    bottom: 16px;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    background: rgb(0, 0, 0);
+    @media (max-width: 767px){
+      bottom: 12px;
+    }
+  }
+  .navbar{
+    margin: 0;
+    padding: 0;
+    .nav-item{
+      margin: 0 29px;
+    }
+  }
+  .nav-bottom{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Avenir Next';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 35px;
+    @media (max-width: 767px){
+      font-size: 9px;
+      line-height: 14px;
+    }
+    a{
+      color: rgba(35, 31, 32, 0.5);
+    }
+  }
+}
+.navbar-light .navbar-nav .nav-link{
+  color: black;
+  font-size: 32px;
+  line-height: 63px;
+  letter-spacing: 2px;
+}
+
+.navbar-expand-md .navbar-nav{
+  display: block;
+  @media (min-width: 768px){
+    margin: unset !important;
+  }
+}
+
+
+.header{
+  .navbar-toggler{
+    position: absolute;
+    right: 15px;
+    background: white;
+  }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 362px;
+    transition: all 0.2s ease;
+    display: block;
+    background: rgba(255, 248, 230, 0.9);
+    height: 100%;
+    min-height: 100%;
+    padding-top: 90px;
+    padding-left: 40px;
+    padding-bottom: 80px;
+    overflow: auto;
+    @media (max-width: 767px){
+      width: 290px;
+    }
+    // @media (max-width: 320px){
+    //   width: calc(100% - 55px);
+    // }
+  }
+  .navbar-collapse.collapsing {
+    height: auto !important;
+    margin-left: 50%;
+    left: 50%;
+    transition: all 0.2s ease;
+  }
+  .navbar-collapse.show {
+    left: calc(100% - 362px);
+    @media (max-width: 767px){
+      left: calc(100% - 290px);
+    }
+  }
+  .navbar{
+    .nav-item{
+      margin: 0 0 25px;
+    }
+  }
+}
+.navbar-light .navbar-nav .nav-link{
+  font-size: 30px;
+  line-height: 27px;
+  letter-spacing: 1.5px;
+  i{
+    font-size: 29px;
+    margin: 2px 0 0 1px;
+  }
+}
+
+.overflow-hidden .background{
+  filter: blur(5px);
+}
+
+.winfridge-detail, .static-page{
+  .header{
+    background: transparent;
+    .bar {
+      background: url('../images/menu-black.png') no-repeat center;
+    }
+    .bar:before {
+      background: #000;
+    }
+  
+    .bar:after {
+      background: #000;
+    }
+    .bar.animate{
+      background: transparent;
+    }
+  }
+}

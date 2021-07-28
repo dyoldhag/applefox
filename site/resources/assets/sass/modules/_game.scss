@@ -1,0 +1,21 @@
+.game-page{
+  .background{
+    background: #FFF8E6;
+    color: #030303;
+  }
+  .video{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    video{
+      width: 90vw;
+      height: 90vh;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

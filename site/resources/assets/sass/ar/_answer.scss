@@ -1,0 +1,103 @@
+.answer{
+  color: black;
+  .content{
+    margin: 50px 20px 0;
+  }
+  h1{
+    font-family: Veneer, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    white-space: pre-line;
+  }
+  .preview{
+    font-family: 'Avenir Next Demi';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .input-number{
+    font-family: Veneer, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    clear: both;
+    margin: 0 0 30px;
+    position: relative;
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    input[type='number'] {
+      -moz-appearance: textfield;
+      -webkit-appearance: none;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+      margin: 0 0 5px;
+      resize: vertical;
+      border: 1px solid black;
+      box-sizing: border-box;
+      margin: 0;
+      outline: none;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .button-minus,
+    .button-plus {
+      outline: 0;
+      position: absolute;
+      top: 18%;
+      border: 0;
+      font-weight: bold;
+      padding: 0;
+      background-color: transparent;
+      min-width: 38px;
+      width: auto;
+      transition: all 300ms ease;
+      z-index: 10;
+      -webkit-appearance: button;
+      cursor: pointer;
+      font-size: 72px;
+    }
+
+    .button-plus {
+      right: 15px;
+    }
+    .button-minus{
+      left: 15px;
+    }
+
+  }
+}
+
+
+.answer.iOS, .answer.Linux{ 
+  .input-number{
+    height: 80px;
+    line-height: 80px;
+    input[type=number] {
+      padding-top: 5px;
+      line-height: 83px;
+      &.fox-field{
+        padding: 15px 0 0 0;
+        height: 90px;
+      }
+    }
+  }
+}
+
+.answer.Android{
+  .input-number{
+    height: 85px;
+    line-height: 80px;
+    input[type=number] {
+      height: 85px;
+      padding-top: 25px;
+    }
+  }
+}
+
+//.answer.MacOS, .answer.Linux{}

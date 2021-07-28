@@ -1,0 +1,2 @@
+{{-- Footer section --}}
+@yield('footer')

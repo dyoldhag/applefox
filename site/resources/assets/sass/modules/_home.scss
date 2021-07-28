@@ -1,0 +1,444 @@
+.home{
+  .background{
+    background: url('../images/home.jpg') no-repeat top center;
+    background-size: 100%;
+    @media (max-width: 767px) {
+      background: url('../images/home-m.jpg') no-repeat top center;
+      background-size: 100% auto;
+    }
+  }
+  .logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+  }
+  .section-home{
+    position: absolute;
+    left: 20vw;
+    top: 11vw;
+    text-align: center;
+    @media (max-width: 1680px) {
+      top: 12vw;
+    }
+    @media (max-width: 1680px) {
+      top: 11vw;
+    }
+    @media (max-width: 1400px) {
+      top: 10vw;
+    }
+    @media (max-width: 1366px) {
+      left: 18vw;
+    }
+    @media (max-width: 1152px) {
+      top: 8vw;
+      left: 15vw;
+    }
+    @media (max-width: 812px) {
+      top: 6vw;
+      left: 11vw;
+    }
+    @media (max-width: 768px) {
+      left: 12vw;
+    }
+    @media (max-width: 767px) {
+      top: 5px;
+      left: 0;
+      right: 0;
+    }
+    h2{
+      font-family: 'Veneer';
+      font-size: 55px;
+      line-height: 50px;
+      white-space: pre-line;
+      margin-bottom: 20px;
+      sup{
+        top: -.25em;
+      }
+      @media (max-width: 1280px) {
+        font-size: 45px;
+        line-height: 40px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 35px;
+        line-height: 30px;
+        margin-bottom: 15px;
+      }
+      @media (max-width: 812px), (max-width: 768px) {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 767px) {
+        font-size: 11vw;
+        line-height: 10vw;
+        margin-bottom: 5px;
+      }
+    }
+    .section-home-preview{
+      white-space: pre-line;
+      font-family: 'Avenir Next';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 20px;
+      @media (max-width: 1024px) {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      @media (max-width: 812px), (max-width: 768px) {
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 15px;
+      }
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 335px;
+        margin: 0 auto 5px;
+        white-space: normal;
+      }
+      @media (max-width: 320px) {
+        font-size: 14px;
+        line-height: 17px;
+        max-width: 290px;
+      }
+    }
+    .scroll-down{
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      font-family: 'Avenir Next';
+      font-size: 10px;
+      line-height: 20px;
+      font-weight: 500;
+      span{
+        display: block;
+      }
+    }
+    .btn{
+      margin-bottom: 20px;
+      border: 0;
+      @media (max-width: 1024px) {
+        margin-bottom: 15px;
+      }
+      @media (max-width: 812px), (max-width: 768px) {
+        margin-bottom: 10px;
+        width: calc(100% - 70px);
+        z-index: 10;
+      }
+    }
+    .section-home-note{
+      white-space: pre-line;
+      font-family: 'Avenir Next';
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 15px;
+      @media (max-width: 767px) {
+        white-space: normal;
+        max-width: 400px;//335px
+        margin: auto;
+        padding: 0 36px;
+      }
+      @media (max-width: 320px) {
+        padding: 0 20px;
+      }
+    }
+  }
+  #winafridge, #confirmwin, #baggiveaway{
+    .scroll-down{
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-decoration: none;
+      font-family: 'Avenir Next';
+      font-size: 10px;
+      line-height: 20px;
+      font-weight: 500;
+      text-align: center;
+      @media (max-width: 1024px) {
+        display: none;
+      }
+      span{
+        display: block;
+      }
+    }
+  }
+  #section1{
+    position: relative;
+    .section-home{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 13vw;
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+      top: unset;
+      @media (max-width: 1680px) {
+        bottom: 8vw;
+      }
+      @media (max-width: 1680px) {
+        bottom: 14vw;
+      }
+      @media (max-width: 1440px) {
+        bottom: 9vw;
+      }
+      @media (max-width: 1280px) {
+        bottom: 6vw;
+      }
+      @media (max-width: 1152px) {
+        bottom: 4vw;
+      }
+      @media (max-width: 812px), (max-width: 768px) {
+        bottom: 1vw;
+        .section1-title{
+          max-width: 65%;
+        }
+      }
+      @media (max-width: 767px) {
+        bottom: 55vw;
+      }
+      @media (max-width: 414px) {
+        bottom: 40vw;
+      }
+      @media (max-width: 375px) {
+        bottom: 35vw;
+      }
+      .section-home-preview{
+        white-space: pre-line;
+        font-family: 'Avenir Next';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 85px;
+        @media (max-width: 1680px) {
+          margin-bottom: 1vw;
+        }
+        @media (max-width: 1440px) {
+          margin-bottom: 3vw;
+        }
+        @media (max-width: 1400px) {
+          margin-bottom: 4vw;
+        }
+        @media (max-width: 767px) {
+          font-family: 'Avenir Next Demi';
+          font-weight: 600;
+          white-space: normal;
+          max-width: 315px;
+          margin: 0 auto 10vw;
+        }
+        @media (max-width: 320px) {
+          max-width: 290px;
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+  #winafridge{
+    position: relative;
+    color: black;
+    // .scroll-down{
+    //   bottom: 13vw;
+    // }
+    @media (max-width: 767px) {
+      .btn{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 160vw;
+        margin: auto;
+      }
+    }
+  }
+  #confirmwin{
+    position: relative;
+    color: black;
+    // .scroll-down{
+    //   color: black;
+    //   bottom: 0;
+    // }
+    @media (max-width: 767px) {
+      .btn{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 145vw;
+        margin: auto;
+        background: #FFF8E6;
+        color: black;
+      }
+    }
+  }
+  #baggiveaway{
+    position: relative;
+    color: black;
+    @media (max-width: 767px) {
+      .section-home-preview{
+        line-height: 19px;
+      }
+      .section-home-note{
+        white-space: pre-wrap;
+        line-height: 13px;
+      }
+    }
+    // .scroll-down{
+    //   bottom: 0vw;
+    // }
+    .section4-content{
+      .btn{        
+        width: 236px;
+      }
+    }
+    @media (max-width: 767px) {
+      .btn{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 226vw;
+        margin: auto;
+      }
+    }
+  }
+  #drinkiesdeals{
+    position: relative;
+    color: black;
+    @media (max-width: 767px) {
+      .section-home-preview{
+        white-space: pre-wrap;
+      }
+      .btn{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 177vw;
+        margin: auto;
+      }
+    }
+  }
+  #menu{
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 50;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+    li{
+      text-align: right;
+      list-style: none;
+      background: url('../images/dot.svg') no-repeat right 5px;
+      padding: 5px 25px 15px 0;
+      font-family: 'Veneer';
+      font-size: 16px;
+      line-height: 20px;
+      a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+      }
+      &.active{
+        color: #fff;
+        font-size: 20px;
+        background: url('../images/dot-active.svg') no-repeat right top;
+        a{
+          color: white;
+          text-shadow: 1px 1px 6px rgba(150, 150, 150, 1);
+        }
+      }
+    }
+  }
+}
+
+.page-footer{
+  width: 100%;
+  position: relative;
+  background-color: #FFF8E6;
+  color: rgba(0, 0, 0, 0.5);
+  &::before{
+    content: '';
+    width:0px;
+    height:0px;
+    border-bottom: 175px solid #FFF8E6;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -175px;
+    @media (max-width: 1024px) {
+      border-bottom: 135px solid #FFF8E6;
+      top: -135px;
+    }
+    @media (max-width: 812px), (max-width: 768px) {
+      border-bottom: 100px solid #FFF8E6;
+      top: -100px;
+    }
+  }
+  .page-footer-first{
+    position: relative;
+    text-align: center;
+    max-width: 650px;
+    margin: auto;
+    height: 65px;
+    @media (max-width: 1024px) {
+      height: 85px;
+    }
+    @media (max-width: 812px), (max-width: 768px) {
+      height: 150px;
+    }
+    @media (max-width: 767px) {
+      height: 0;
+      margin: 0 36px;
+    }
+    @media (max-width: 375px) {
+      height: 0;
+    }
+    @media (max-width: 320px) {
+      margin: 0 15px;
+      height: 20px;
+    }
+    img{
+      position: absolute;
+      bottom: 0;
+      right: 65px;
+      @media (max-width: 767px) {
+        right: 0;
+        left: 0;
+        margin: auto;
+        bottom: 5px;
+      }
+    }
+  }
+}
+
+body{
+  .page-footer-second{
+    position: relative;
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    background: #fff8e6;
+    font-family: 'Avenir Next';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    a{
+      color: rgba(0, 0, 0, 0.5);
+      margin-left: 20px;
+    }
+    @media (max-width: 767px) {
+      font-size: 10px;
+      line-height: 20px;
+      white-space: pre-line;
+      a{
+        margin-left: 0;
+        &:hover{
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}

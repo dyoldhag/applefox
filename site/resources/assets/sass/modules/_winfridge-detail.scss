@@ -1,0 +1,155 @@
+.winfridge-detail{
+  .background{
+    background: #FFF8E6;
+  }
+  h1{
+    color: #231F20;
+    font-family: 'Veneer';
+    font-size: 30px;
+    padding: 77px 0 0;
+    margin: 0;
+    position: relative;
+    z-index: 999;
+    @media (max-width: 767px) {
+      font-size: 6.5vw;
+      padding: 35px 0 0;
+    }
+  }
+  .preview{
+    font-family: 'Avenir Next';
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 0 0 60px;
+    @media (max-width: 767px) {
+      padding: 0 0 35px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  .content{
+    max-width: 644px;
+    margin: auto;
+    color: #231F20;
+    @media (max-width: 767px) {
+      padding: 0 36px 20px;
+    }
+    @media (max-width: 320px) {
+      padding: 0 15px 20px;
+    }
+    .form-row{
+      margin-right: -8px;
+      margin-left: -8px;
+    }
+    .form-row > .col, .form-row > [class*="col-"]{
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+    label.form-label{
+      font-family: 'Veneer';
+      font-size: 20px;
+      line-height: 17px;
+      color: #231F20;
+      display: block;
+    }
+    input[type=text] {
+      border: 2px solid white;
+      text-align: center;
+      font-family: 'Avenir Book';
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 44px;
+      height: 44px;
+      color: black;
+      border-radius: 10px;
+      &:focus{
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+      }
+      &::placeholder {
+        color: #707070;
+        opacity: 1;
+      }
+      &:-ms-input-placeholder {
+        color: #707070;
+      }
+      &::-ms-input-placeholder { 
+        color: #707070;
+      }
+    }
+    .SumoSelect{
+      width: 314px;
+      margin: auto;
+      font-family: 'Avenir Book';
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 44px;
+      color: black;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      .optWrapper{
+        top: 44px;
+        .options li label{
+          margin: 5px 0;
+          font-family: 'Avenir Book';
+          font-weight: normal;
+          font-size: 14px;
+          color: black;
+          line-height: 17px;
+        }
+      }
+      .CaptionCont{
+        box-shadow: none;
+        border: 0;
+        height: 44px;
+        border-radius: 10px;
+        padding: 0;
+        label{
+          width: 15px;
+          right: 40px;
+          @media (max-width: 767px) {
+            right: 20px;
+          }
+        }
+        label>i {
+          background-image: url('../images/select-down.svg');
+          background-position: 50%;
+          width: 15px;
+          height: 10px;
+          display: block;
+          position: absolute;
+          top: 5px;
+          left: 0;
+          right: 20px;
+          bottom: 0;
+          margin: auto;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .note{
+      font-family: 'Avenir Next';
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 14px;
+      color: #707070;
+      margin-bottom: 10px;
+    }
+  }
+  .btn{
+    width: 180px;
+    margin-bottom: 50px;
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+  }
+  @media (min-height: 800px) {
+    .page-footer-second{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

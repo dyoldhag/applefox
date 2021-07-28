@@ -1,0 +1,234 @@
+.freebag{
+  .background{
+    background: url('../images/freebag.jpg') no-repeat top;
+    background-size: 100% auto;
+    @media (max-width: 767px) {
+      background: url('../images/freebag-m.jpg') no-repeat top;
+      background-size: 100% auto;
+    }
+  }
+  .content{
+    position: relative;
+    background-color: #FFF8E6;
+    color: black;
+    @media (max-width: 767px) {
+      padding: 0 36px;
+    }
+    @media (max-width: 320px) {
+      padding: 0 15px;
+    }
+    &::before{
+      content: '';
+      width:0px;
+      height:0px;
+      border-bottom: 175px solid #FFF8E6;
+      border-left: 100vw solid transparent;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -175px;
+      @media (max-width: 1024px) {
+        border-bottom: 100px solid #FFF8E6;
+        top: -100px;
+      }
+    }
+    .wrap{
+      max-width: 600px;
+      margin: auto;
+      position: relative;
+      .freebag-bag{
+        position: absolute;
+        bottom: calc(100% - 50px);
+        max-width: 32vw;
+        right: -9.5vw;
+        @media (max-width: 1680px) {
+          max-width: 33vw;
+          right: -8vw;
+        }
+        @media (max-width: 1600px) {
+          right: -7vw;
+        }
+        @media (max-width: 1440px) {
+          right: -5vw;
+        }
+        @media (max-width: 1366px) {
+          right: -4vw;
+        }
+        @media (max-width: 1280px) {
+          right: -3vw;
+        }
+        @media (max-width: 1280px) {
+          max-width: 36vw;
+          right: -2vw;
+        }
+        @media (max-width: 1024px) {
+          max-width: 34vw;
+          right: 2vw;
+        }
+        @media (max-width: 812px) {
+          max-width: 37vw;
+          right: 10vw;
+        }
+        @media (max-width: 767px) {
+          max-width: 100%;
+          right: 0;
+          left: 0;
+          // bottom: calc(100% - 70px);
+          top: -68vw;
+        }
+      }
+      .preview{
+        font-family: 'Avenir Next';
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        text-align: center;
+        padding-top: 50px;
+        @media (max-width: 767px) {
+          padding-top: 70px;
+        }
+        .note{
+          font-size: 10px;
+          line-height: 14px;
+          margin-top: 10px;
+          white-space: pre-line;
+          color: #707070;
+          margin-bottom: 30px;
+          @media (max-width: 767px) {
+            white-space: normal;
+          }
+        }
+      }
+      h2{
+        font-family: 'Veneer';
+        font-size: 20px;
+        line-height: 17px;
+        margin: 0 0 15px;
+        text-align: center;
+      }
+
+      .SumoSelect{
+        width: 180px;
+        margin: auto;
+        font-family: 'Veneer';
+        font-size: 20px;
+        line-height: 42px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        display: block;
+        @media (max-width: 767px) {
+          width: 100%;
+          text-align: center;
+        }
+        .optWrapper{
+          top: 44px;
+          .options li label{
+            margin: 5px 0;
+            font-family: 'Avenir Book';
+            font-weight: normal;
+            font-size: 14px;
+            color: black;
+            line-height: 17px;
+          }
+        }
+        .CaptionCont{
+          box-shadow: none;
+          border: 0;
+          height: 44px;
+          border-radius: 10px;
+          padding: 0;
+          background: transparent;
+          span{
+            padding-left: 20px;
+          }
+          label{
+            width: 15px;
+            right: 15px;
+            @media (max-width: 767px) {
+              right: 40px;
+            }
+          }
+          label>i {
+            background-image: url('../images/select-freebag.svg');
+            background-position: 50%;
+            width: 10px;
+            height: 10px;
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            right: 20px;
+            bottom: 0;
+            margin: auto;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+
+      .outlet{
+        font-family: 'Avenir Next';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 444px;
+        margin: 10px auto 0;
+        .row{
+          margin-bottom: 15px;
+        }
+        .index{
+          border-bottom: 1px solid black;
+          padding: 15px 0 10px;
+          margin-bottom: 10px;
+          width: 100%;
+          float: left;
+          text-align: center;
+          @media (max-width: 767px) {
+            span{
+              display: block;
+            }
+          }
+        }
+        .item{
+          padding: 8px 10px 8px 25px;
+          @media (max-width: 767px) {
+            padding: 8px 10px;
+          }
+        }
+        .item2{
+          padding: 8px 25px 8px 10px;
+          @media (max-width: 767px) {
+            padding: 8px 10px;
+          }
+        }
+      }
+      .btn{
+        margin-top: 70px;
+        @media (max-width: 767px) {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+
+body.freebag.iOS{
+  .content .wrap .SumoSelect .CaptionCont{
+    line-height: 50px;
+  }
+}
+body.freebag.Android{
+  .content .wrap .SumoSelect .CaptionCont{
+    line-height: 50px;
+  }
+}
+body.freebag.MacOS, body.freebag.Linux{
+  .content .wrap .SumoSelect .CaptionCont{
+    line-height: 50px;
+  }
+}

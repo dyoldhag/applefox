@@ -1,0 +1,179 @@
+body.modal-open > .background{
+    filter: blur(10px);
+}
+body{
+  background-color: #FFF8E6;
+  .background{
+    background: url('../images/bg-desktop.jpg') no-repeat center;
+    background-size: 100% 100%;
+    color: #FFF8E6;
+    margin: auto;
+    overflow: hidden;
+    min-height: 100vh;
+    @media (max-width: 1024px) {
+      background: url('../images/bg.jpg') no-repeat center;
+      background-size: 100% 100%;
+    }
+  }
+  a{
+    color: #FFF8E6;
+    &:hover{
+      color: #FFF8E6;
+    }
+  }
+  img{
+    max-width: 100%;
+  }
+  .logo{
+    padding: 4.3vw 0 0;
+    position: relative;
+    z-index: 9999;
+    max-width: 200px;
+    margin: auto;
+    @media (max-width: 1600px) {
+      padding: 3.5vw 0 0;
+    }
+    @media (max-width: 1440px) {
+      padding: 3vw 0 0;
+    }
+    @media (max-width: 1280px) {
+      padding: 2vw 0 0;
+    }
+    @media (max-width: 1024px) {
+      padding: 3vw 0 0;
+      img{
+        max-width: 54px;
+      }
+    }
+    @media (max-width: 768px) {
+      padding: 2vw 0 0;
+    }
+    @media (max-width: 767px) {
+      padding: 5vw 0 0;
+    }
+  }
+
+  /*Model*/
+  .modal-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    z-index: 999;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .modal-close:hover {
+    opacity: 0.8;
+  }
+  .modal-close:before, .modal-close:after {
+    position: absolute;
+    left: 10px;
+    content: ' ';
+    height: 24px;
+    width: 2px;
+    background-color: #000000;
+  }
+  .modal-close:before {
+    transform: rotate(45deg);
+  }
+  .modal-close:after {
+    transform: rotate(-45deg);
+  }
+  .modal-backdrop.show{
+    opacity: 1;
+    filter: blur(5px);
+  }
+  .modal-backdrop{
+    background: url('../images/bg.jpg') center;
+    background-size: 100% 100%;
+  }
+  .modal-fullscreen{
+    margin: 30px 30px;
+    @media (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .modal-content{
+      min-height: calc(100vh - 60px);
+      background: rgba(255, 248, 230, 0.75);
+      border: 0;
+      border-radius: 10px;
+      font-family: 'Avenir Next';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+    }
+  }
+  /*Model*/
+  .btn{
+    font-family: Veneer, sans-serif;
+    background: #FFF8E6;
+    color: #231F20;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+    line-height: 43px;
+    height: 45px;
+    width: 150px;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid #FFF8E6;
+    @media (max-width: 676px) {
+      width: 160px;
+      line-height: 43px;
+      height: 45px;
+      font-size: 20px;
+    }
+    &:focus{
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+    }
+  }
+  .transparent{
+    background: transparent;
+    color: #FFF8E6;
+    &:hover{
+      background: transparent;
+      color: #FFF8E6;
+    }
+  }
+  .btn-black{
+    background: #000000;
+    color: #FFF8E6;
+    &:hover{
+      background: #000000;
+      color: #FFF8E6;
+    }
+  }
+
+  .was-validated .form-control:valid, .form-control.is-valid{
+    background: white;
+  }
+  .was-validated input[type=text].form-control:invalid, input[type=text].form-control.is-invalid{
+    background: white;
+    border: 2px solid #FF0000;
+  }
+  .was-validated input[type=text].form-control:valid:focus, input[type=text].form-control.is-valid:focus{
+    border: 2px solid white;
+  }
+}
+
+body.iOS{
+  .btn{
+    line-height: 50px;
+  }
+}
+body.Android, body.Linux{
+  .btn{
+    line-height: 50px;
+  }
+}
+body.MacOS{
+  .btn{
+    line-height: 50px;
+  }
+}

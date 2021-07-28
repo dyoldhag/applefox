@@ -1,0 +1,46 @@
+.ar-scan{
+	margin : 0px; overflow: hidden;
+	color: #000;
+	.ar-background{
+		// position: fixed;
+		// top: 0;
+		// width: 100%
+	}
+	.logo{
+		position: fixed;
+		width: 100%;
+		max-width: 100%;
+		top: 0;
+		left: 0;
+	}
+	.btn.btn-black{
+		position: fixed;
+		bottom: 35px;
+		width: 300px;
+		left: calc(50% - 150px);
+		display: none;
+		&.marketfound{
+			display: inline-block;
+		}
+	}
+	.arjs-loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+    	text-align: center;
+    	font-size: 1.25em;
+    	color: white;
+    }
+    &.hidden{
+    	display: none;
+    }
+  }
+}

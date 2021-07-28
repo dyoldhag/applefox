@@ -1,0 +1,152 @@
+@mixin button($padding) {
+  border: 2px solid $hight-text;
+  border-radius: 0;
+  background: rgba(165, 0, 52, 0.45);
+  color: $hight-text;
+  text-transform: uppercase;
+  padding: $padding;
+  font-family:'Chivas Priori Bold';
+  font-size: 21px;
+  &:focus {
+    box-shadow: none;
+  }
+
+}
+
+@mixin arrow($direction, $color) {
+  border: solid $color;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+  @if $direction == bottom {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  } @else if $direction == left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  } @else if $direction == top {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  } @else {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+}
+
+@mixin scrollbar($class, $width, $foreground-color, $background-color) {
+  ::-webkit-scrollbar {
+    width:  $width;
+  }
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background: $background-color;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+}
+
+@mixin placeholder($class) {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+
+@mixin transform($transforms) {
+  -moz-transform:       $transforms;
+  -o-transform:         $transforms;
+  -ms-transform:        $transforms;
+	-webkit-transform:    $transforms;
+  transform:            $transforms;
+}
+
+@-moz-keyframes bump {
+	0% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-o-transform: scale(1.5);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+}
+@-webkit-keyframes bump {
+	0% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-o-transform: scale(1.5);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+}
+@-o-keyframes bump {
+  0% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-o-transform: scale(1.5);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+}
+@keyframes bump {
+	0% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-o-transform: scale(1.5);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+}
